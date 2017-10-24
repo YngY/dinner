@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorWhite"
+              android:orientation="vertical"
+              android:padding="@dimen/activity_horizontal_margin">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"/>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/login_log"
+            android:layout_width="101dp"
+            android:layout_height="101dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            android:src="@drawable/iv_logo"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+
+    <LinearLayout
+        android:id="@+id/login_div"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        >
+
+        <EditText
+            android:id="@+id/login_username"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/iv_input"
+            android:drawableLeft="@drawable/icon_user"
+            android:drawablePadding="10dp"
+            android:hint="用户名"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorTextLight"/>
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/iv_input"
+            android:drawableLeft="@drawable/icon_pwd"
+            android:drawablePadding="10dp"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorTextLight"/>
+
+        <Button
+            android:id="@+id/login_btnSignin"
+
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/iv_login_bt"
+            android:text="登录"
+            android:textSize="@dimen/text_size_normal"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"/>
+
+</LinearLayout>

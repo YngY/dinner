@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:id="@+id/tool_bar"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:background="?attr/colorPrimary"
+                                   android:fitsSystemWindows="true"
+                                   android:minHeight="?attr/actionBarSize"
+                                   app:titleTextAppearance="@style/Toolbar.TitleText"
+                                   android:theme="@style/ToolbarTheme"
+                                   app:titleTextColor="@android:color/white">
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="111"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        android:singleLine="true"
+        android:textColor="@color/colorWhite"
+         />
+
+</android.support.v7.widget.Toolbar>
